@@ -1,0 +1,161 @@
+/*----------Font Style-------------*/
+h1 {
+  font-size: 40px;
+  font-weight: 700px;
+  text-align: center;
+}
+p {
+  font-size: 18px;
+}
+
+/*----------Body Style-------------*/
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto 30px auto;
+  max-width: 700px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*----------Buttons Style-------------*/
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-btn {
+  font-size: 18px;
+  font-weight: 600;
+  height: 50px;
+  width: 150px;
+}
+
+.menu-btn:hover {
+  color: DodgerBlue;
+}
+
+.menu-btn:active {
+  border-bottom: 4px solid DodgerBlue;
+}
+
+.addTask-btn {
+  color: white;
+  font-size: 16px;
+  width: 109px;
+  height: 56px;
+  border-radius: 12px;
+  background-color: DodgerBlue;
+}
+
+.addTask-btn:hover,
+.addTask-btn:focus {
+  background-color: #0b3f83;
+}
+
+.addTask-btn:active {
+  background-color: #051b39;
+}
+
+.deleteAll-btn {
+  color: white;
+  background: #eb5757;
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.btn__img {
+  width: 15px;
+  height: 15px;
+}
+
+.deleteAll-btn:hover,
+.deleteAll-btn:focus {
+  background: #b71515;
+}
+
+.deleteAll-btn:active {
+  background: #6e0d0d;
+}
+
+/*----------------Header Style------------*/
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-bottom: solid lightgray;
+}
+
+/*----------------- AddTask Style-----------------*/
+
+.error {
+  /* display: none;*/
+  color: #eb5757;
+}
+.addTask__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  height: 56px;
+  width: auto;
+  padding: 20px 0;
+}
+.addTask__input {
+  border-radius: 12px;
+  padding: 5px;
+  border: solid 1px lightgray;
+  font-size: 16px;
+  width: 100%;
+}
+
+.addTask-btn {
+  color: white;
+  font-size: 16px;
+  width: 109px;
+  height: 56px;
+  border-radius: 12px;
+  background-color: #2f80ed;
+}
+
+/*----------------- List Style----------------*/
+
+.tasks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkbox__container {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.checkbox {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.checkbox:checked + label {
+  text-decoration: line-through;
+}
+
+/*----------------- deleteAll Style----------------*/
+
+.deleteAll {
+  display: flex;
+  justify-content: flex-end;
+  padding: 40px 0;
+}

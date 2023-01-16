@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TO DO LIST</title>
+  </head>
+  <body>
+    <header>
+      <h1>#ToDo</h1>
+      <section class="menu">
+        <ul class="menu-list">
+          <li><button class="menu-btn menu-btn__all">All</button></li>
+          <li><button class="menu-btn menu-btn__active">Active</button></li>
+          <li>
+            <button class="menu-btn menu-btn__completed">Completed</button>
+          </li>
+        </ul>
+      </section>
+    </header>
+
+    <section class="addTask">
+      <div class="addTask__container">
+        <input type="text" class="addTask__input" placeholder="add details" />
+        <button class="addTask-btn">Add</button>
+      </div>
+      <p class="error">You have to write somenthing!</p>
+    </section>
+
+    <section class="list">
+      <div class="tasks tasks__all"></div>
+
+      <div class="tasks tasks__active">
+        <div class="checkbox__container checkbox__container--active">
+          <input type="checkbox" class="checkbox" id="taskActive" />
+          <label for="Name">Tasks to do</label>
+        </div>
+      </div>
+
+      <div class="tasks tasks__active">
+        <div class="checkbox__container checkbox__container--completed">
+          <input type="checkbox" class="checkbox" id="taskCompleted" />
+          <label for="Name">Tasks done</label>
+        </div>
+        <button class="delete-btn">
+          <div class="btn__img">
+            <img src="img/delete-grey.svg" class="deleteIcon" alt="garbage" />
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section class="deleteAll">
+      <button class="deleteAll-btn">
+        <div class="btn__img">
+          <img src="img/delete-white.svg" class="deleteIcon" alt="garbage" />
+        </div>
+        <p>delete all</p>
+      </button>
+    </section>
+  </body>
+</html>
