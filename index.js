@@ -23,6 +23,8 @@ function buildTask(task) {
   taskContainer.innerHTML = `<input type="checkbox" ${
     task.isCompleted ? "checked" : ""
   } />${task.description}`;
+  taskContainer.innerHTML +=
+    '<button class = "btn-single-delete" id = "btn-single-delete" type="button">X</button>';
 
   const checkboxNode = taskContainer.querySelector('[type="checkbox"]');
   checkboxNode.addEventListener("click", function () {
@@ -34,15 +36,15 @@ function buildTask(task) {
     taskToChange.isCompleted = !taskToChange.isCompleted;
   });
 
-  taskContainer.innerHTML +=
-    '<button class = "btn-single-delete" id = "btn-single-delete" type="button">X</button>';
+  const deleteTask = taskContainer.querySelector("#btn-single-delete");
+  deleteTask.addEventListener("click", function (event) {
+    if (event.target.id === "btn-single-delete") {
+      const element = document.getElementById("task-container");
+      element.remove();
+    }
+  });
 
   return taskContainer;
-}
-
-function remove() {
-  var element = document.getElementById("task-container");
-  element.remove();
 }
 
 function renderList(filterToApply) {
