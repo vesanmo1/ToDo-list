@@ -19,13 +19,10 @@ const testData = [
 function buildTask(task) {
   const taskContainer = document.createElement("div");
   taskContainer.setAttribute("id", "task-container");
-  taskContainer.setAttribute("onclick", "remove(this)");
   taskContainer.className = "tasks__task";
   taskContainer.innerHTML = `<input type="checkbox" ${
     task.isCompleted ? "checked" : ""
   } />${task.description}`;
-  taskContainer.innerHTML +=
-    '<button class = "btn-single-delete" id = "btn-single-delete" type="button">X</button>';
 
   const checkboxNode = taskContainer.querySelector('[type="checkbox"]');
   checkboxNode.addEventListener("click", function () {
@@ -36,6 +33,9 @@ function buildTask(task) {
     const taskToChange = testData[index];
     taskToChange.isCompleted = !taskToChange.isCompleted;
   });
+
+  taskContainer.innerHTML +=
+    '<button class = "btn-single-delete" id = "btn-single-delete" type="button">X</button>';
 
   return taskContainer;
 }

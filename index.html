@@ -1,33 +1,33 @@
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" href="./styles.css" />
     <script src="index.js" defer></script>
-  </head>
 
-  <body>
+</head>
+
+<body>
     <div class="content">
-      <div class="filters">
-        <button
-          class="filter__option filter__option--selected"
-          data-filter="all"
-        >
-          All
-        </button>
-        <button class="filter__option" data-filter="active">Active</button>
-        <button class="filter__option" data-filter="completed">
-          Completed
-        </button>
-      </div>
-      <form class="add" id="add-task">
-        <input
-          type="text"
-          placeholder="add description"
-          class="add__input"
-          name="description"
-        />
-        <button type="submit" class="add__button">Add</button>
-      </form>
-      <div class="tasks" id="task-list"></div>
+        <div class="filters">
+            <button class="filter__option filter__option--selected" data-filter="all">
+                All
+            </button>
+            <button class="filter__option" data-filter="active">
+                Active
+            </button>
+            <button class="filter__option" data-filter="completed">
+                Completed
+            </button>
+        </div>
+        <form class="add" id="add-task">
+            <input type="text" placeholder="add description" class="add__input" name="description"/>
+            <button type="submit" class="add__button">
+                Add
+            </button>
+        </form>
+        <div class="tasks" id="task-list">
+        </div>
     </div>
-  </body>
+</body>
+
 </html>
